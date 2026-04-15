@@ -1,0 +1,134 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-soft: #f2f4fa;
+  --text: #1d2433;
+  --text-muted: #5f6b7e;
+  --brand: #b88e2f;
+  --brand-dark: #946f1f;
+  --border: #e4e8f1;
+  --shadow-sm: 0 8px 24px rgba(17, 24, 39, 0.08);
+  --shadow-md: 0 18px 40px rgba(17, 24, 39, 0.12);
+  --radius-md: 14px;
+  --radius-lg: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: radial-gradient(circle at 10% 10%, #fff6e7 0%, transparent 40%),
+    radial-gradient(circle at 95% 5%, #e7efff 0%, transparent 36%), var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type="file"] {
+  max-width: 100%;
+}
